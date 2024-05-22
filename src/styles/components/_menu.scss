@@ -9,7 +9,7 @@
     &__burger {
         position: fixed;
         top: 7px;
-        right: 37px;
+        right: 17px;
         z-index: 100;
         cursor: pointer;
         height: 40px;
@@ -162,6 +162,15 @@ body.menu--open .fond-header {
     border-style: none;
 }
 
+.logo {
+    display: flex;
+    position: fixed;
+    height: 40px;
+    width: 40px;
+    z-index: 100;
+    margin-top: 2%;
+}
+
 @media (min-width: 819px) {
     .menu__burger {
         display: none;
@@ -169,6 +178,12 @@ body.menu--open .fond-header {
 }
 
 @media (min-width: 820px) {
+    .logo {
+        margin: 15px 0 0 5em;
+        position: fixed;
+        height: 50px;
+    }
+
     .menu__links-container {
         display: flex;
         justify-content: space-around;
@@ -185,7 +200,7 @@ body.menu--open .fond-header {
         padding: 0;
         position: fixed;
         width: 100%;
-        background-color: #70A1C4;
+        background-color: #F4F4F4;
         transform: none;
     }
 
@@ -193,6 +208,7 @@ body.menu--open .fond-header {
         opacity: 1;
         pointer-events: all;
         transform: none;
+        padding: 20px;
     }
 
     .menu__el a {
@@ -218,6 +234,6 @@ body.menu--open .fond-header {
         color: black;
         margin: 0 auto;
         align-items: center;
-        justify-content: space-evenly;
+        justify-content: center;
     }
 }

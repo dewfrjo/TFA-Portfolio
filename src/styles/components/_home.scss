@@ -1,10 +1,55 @@
-.home {
-    background-color: aqua;
-
-    margin: 0 0 0 -17px;
+.intro {
+    margin: 0 0 150px -17px;
     width: 100vw;
     height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
+
+    &__img {
+        display: none;
+    }
+    &__trame {
+        position: absolute;
+        width: 620px;
+        right: -80%;
+        top: 55%;
+    }
+}
+.base-imgH {
+    overflow: hidden;
+    position: absolute;
+    width: 100vw;
+    height: 175vh;
+}
+
+section{
+    margin-bottom: 200px;
+}
+
+@media (min-width: 820px) {
+    .intro {
+        width: 100vw;
+        height: 100vh;
+        margin-bottom: 200px;
+        margin: 0 -100px 200px -100px;
+        &-text {
+            margin-top: 50px;
+            text-align: center;
+            max-width: 30ch;
+            margin-left: 40%;
+        }
+        &__img {
+            display: block;
+            position: absolute;
+            width: 600px;
+            top: 45%;
+            left: -115px;
+        }
+        &__trame {
+            width: 720px;
+            right: -20%;
+            top: 52%;        
+        }
+    }
 }

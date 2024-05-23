@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>PHP Project</title>
+  <title>Portfolio</title>
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
@@ -31,8 +31,8 @@
       </div>
       <div class="menu__links-container" id="menuLinksContainer">
         <ul class="menu__list">
-          <li class="menu__el" id="home"><a href="#home">Home</a></li>
-          <li class="menu__el" id="a-propos"><a href="#a-propos">Á propos de moi</a></li>
+          <li class="menu__el" id="home"><a href="#accueil">Home</a></li>
+          <li class="menu__el" id="a-propos"><a href="#apropos">Á propos de moi</a></li>
           <li class="menu__el" id="projets"><a href="#projet">Projets</a></li>
           <li class="menu__el" id="motivations"><a href="#motivation">Motivations</a></li>
         </ul>
@@ -40,18 +40,82 @@
     </nav>
   </header>
   <main>
-    <section class="home" id="home">
-      <h1>Bienvenue</h1>
-      <p class="intro">Je suis un étudiant belge en design web et mobile prêt à entrer dans l'inconnu</p>
+    <section id="accueil" class="intro">
+      <div>
+        <h1>Bienvenue</h1>
+        <p class="intro-text">Je suis un étudiant belge en design web et mobile prêt à entrer dans l'inconnu</p>
+      </div>
+      <div class="base-imgH">
+        <img class="intro__img" src="assets/images/decoH.svg" alt="Dessin de 4 petits monstres réalisé à la main par moi-même">
+        <img class="intro__trame" src="assets/images/trame-rose.svg" alt="trame en forme de cercle de couleur rose">
+      </div>
     </section>
-    <section id="a-propos">
-      <h2 class="soustitre">Á propos de moi</h2>
-      <h3 class="soustitre">Jeux vidéos</h3>
+    <section id="apropos">
+      <div>
+        <h2 class="soustitre">À propos de moi</h2>
+        <p>Je m'appelle Jonathan, j'ai 23 ans et j'étudie à l'HEAJ en DWT. J'ai fini mes secondaires en tant qu'assistant comptable, mais voir des chiffres défiler toute la jurnée, ce n'était pas pour moi. Par la suite, j'ai été vers d'autre horizons, comme l'étude pour être assistant au métier de la protection et de la sécurité. Mais ce n'étais pas assez créatif et artistique. Étant donné que j'adore dessiner, je me suis donc dirigé en infographie et c'est durant la première année que j'ai découvert le code. J'ai voulu en découvrir plus dans ce domaine d'avenir.</p>
+      </div>
+
+      <h2>Mes passions</h2>
+      <div class="flip">
+        <div class="front">
+          <h3 class="soustitre">Bricoler</h3>
+          {# <img src="" alt=""> #}
+          {# <img class="front-btn" src="" alt=""> #}
+        </div>
+        <div class="back">
+          <p class="back__text">Débrouillardise - recherche de solution - la créativité - touche à tout. Je suis le premier quand j'ai besoin de quelque chose &#x28;meubles ou modification quelconque&#x29;, à voir si je sais le faire par moi-même en combinant des planches de récupération.</p>
+        </div>
+      </div>
+
+      <div class="flip">
+        <div class="front">
+          <h3 class="soustitre">Jeux Vidéos</h3>
+          {# <img src="" alt=""> #}
+          {# <img class="front-btn" src="" alt=""> #}
+        </div>
+        <div class="back">
+          <p class="back__text">Les jeux vidéo me poussent à aller au bout des choses avec persévérance. Que ce soit en travail d’équipe ou en solo, ils exigent une constante adaptation. L’analyse de l’environnement est essentielle pour progresser et surmonter les défis.</p>
+        </div>
+      </div>
+
+      <div class="flip">
+        <div class="front">
+          <h3 class="soustitre">Randonnée</h3>
+          {# <img src="" alt=""> #}
+          {# <img class="front-btn" src="" alt=""> #}
+        </div>
+        <div class="back">
+          <p class="back__text">C’est une excellente occasion de me retrouver. Je ressens une profonde liberté, loin des obligations et du stress. De plus, la randonnée me permet de décrocher de la technologie. Sans les distractions des écrans, je profite pleinement de la nature et de moi-même.</p>
+        </div>
+      </div>    
+      
+      <div class="flip">
+        <div class="front">
+          <h3 class="soustitre">Moto</h3>
+          {# <img src="" alt=""> #}
+          {# <img class="front-btn" src="" alt=""> #}
+        </div>
+        <div class="back">
+          <p class="back__text">La moto me procure une sensation de liberté incomparable. Elle favorise l'entraide et le partage au sein d'une communauté de passionnée.</p>
+        </div>
+      </div>
+
+      <div class="flip">
+        <div class="front">
+          <h3 class="soustitre">Dessin</h3>
+          {# <img src="" alt=""> #}
+          {# <img class="front-btn" src="" alt=""> #}
+        </div>
+        <div class="back">
+          <p class="back__text">Ça me permet de travailler et de perfectionner tout ce qui est la créativité, la curiosité, la patience, ma perception dans l’espace. Le dessin est un art qui n’as pour seul limite son imagination ce qui est fascinant.</p>
+        </div>
+      </div>    
 
     </section>
-    <section id="projet">
+    <section id="projet" class="">
     </section>
-    <section id="motivation">
+    <section id="motivation" class="">
     </section>
   </main>
   <footer>

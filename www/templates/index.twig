@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Portfolio</title>
+  <title>{{title}}</title>
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
@@ -11,6 +11,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <link rel="stylesheet" href="assets/styles/app.css">
+
+  <link rel="icon" href="assets/images/logo.svg">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -23,7 +25,7 @@
 </head>
 <body>
   <header>
-    <a class="logo" href="index.php"><img src="assets/images/logo.svg" alt="Logo qui représente un oeil d'un de mes dessins"></a>
+    <a class="logo" href="/"><img src="assets/images/logo.svg" alt="Logo qui représente un oeil d'un de mes dessins"></a>
     <nav class="sticky-menu menu sticky">
       <div class="menu__burger burger">
         <p class="Tbtn">menu</p>
@@ -31,7 +33,7 @@
       </div>
       <div class="menu__links-container" id="menuLinksContainer">
         <ul class="menu__list">
-          <li class="menu__el" id="home"><a href="#accueil">Home</a></li>
+          <li class="menu__el" id="home"><a href="#accueil">Accueil</a></li>
           <li class="menu__el" id="a-propos"><a href="#apropos">Á propos de moi</a></li>
           <li class="menu__el" id="projets"><a href="#projet">Projets</a></li>
           <li class="menu__el" id="motivations"><a href="#motivation">Motivations</a></li>
@@ -113,9 +115,26 @@
       </div>    
 
     </section>
+
     <section id="projet" class="">
+      <h2>Ma dernière réalisation</h2>
+      {# <img src="" alt=""> #}
+      <h3>Projet RUX : 2023-2024</h3>
+      <p>Projet qui avait pour but de personnalisé nos locaux avec un intérêt pour l'option.</p>
+      <p>Ce projet fut très intéressant et constructif pour moi, car c’est le premier vrai projet qu’on a mis en place de A à Z et le voir se concrétiser. La conception, la réalisation et la pose dans nos locaux ont été effectuées par les membres du groupe.
+      </p>
+      {# <img src="" alt=""> #}
+
+      {# <img src="" alt=""> #}
+      <a href="/projets">Voir mes autres projets</a>
+
     </section>
+
     <section id="motivation" class="">
+    {# <img src="" alt=""> #}
+      <h2>Motivations</h2>
+      <p>J’aimerais qu’avec les stages je puisse  avoir un aperçu réel de ce qu’est le métier de webdesigner sur le terrain et de pouvoir traiter des vrais cas de clients. Découvrir d’autres personnes et façon de travailler et d'autres lieux / cadre de travail que celui de l’école.</p>
+      {# <img src="" alt=""> #}
     </section>
   </main>
   <footer>

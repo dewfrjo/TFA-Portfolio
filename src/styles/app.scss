@@ -46,6 +46,10 @@ h3, a {
   font-size: 35px;
   font-style: italic;
 }
+a {
+  text-decoration: none;
+  color: black;
+}
   
 @media (min-width: 819px) {
   body {

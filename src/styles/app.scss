@@ -2,13 +2,13 @@
 @import 'components/home';
 @import 'components/menu';
 
-@font-face {
-    font-family: 'Batuphat Script' ;
-    src: 
-        local("Batuphat Script"),
-        url("/assets/Batuphat-Script.otf") format("OpenType");
+// @font-face {
+//     font-family: 'Batuphat Script' ;
+//     src: 
+//         local("Batuphat Script"),
+//         url("/assets/Batuphat-Script.otf") format("OpenType");
   
-}
+// }
 
 *{
   margin: 0;
@@ -23,12 +23,13 @@ body {
   line-height: 1.5;
   color: black;
   text-align: center;
+  margin: 0 auto;
   background-color: #F4F4F4;
   margin: 0 17px;
 }
 
 h1 {
-  font-family: 'Batuphat Script';
+  font-family: "Anton", sans-serif;
   font-size: 71px;
 }
 h2 {
@@ -38,11 +39,11 @@ h3, a {
   font-size: 23px;
 }
 .soustitre, a {
-  font-family: "Fira Sans Condensed", sans-serif;
+  font-family: "Plus Jakarta Sans", sans-serif;
   font-style: normal;
 }
 .intro-text {
-  font-family: "Fira Sans Condensed", sans-serif;;
+  font-family: "Plus Jakarta Sans", sans-serif;;
   font-size: 35px;
   font-style: italic;
 }
@@ -56,7 +57,7 @@ a {
     margin: 0 100px;
   }
   h1 {
-    font-size: 80px;
+    font-size: 90px;
   //   margin-top: 170px;
   }
   h2, .intro-text {

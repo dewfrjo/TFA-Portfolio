@@ -9,12 +9,15 @@
     &__img {
         display: none;
     }
-    &__trame {
-        position: absolute;
-        width: 620px;
-        right: -80%;
-        top: 55%;
+    &-text {
+        margin: 0 17px;
     }
+    // &__trame {
+    //     position: absolute;
+    //     width: 620px;
+    //     right: -80%;
+    //     top: 55%;
+    // }
 }
 .base-imgH {
     overflow: hidden;
@@ -28,28 +31,31 @@ section{
 }
 
 @media (min-width: 820px) {
+
     .intro {
         width: 100vw;
         height: 100vh;
         margin-bottom: 200px;
-        margin: 0 -100px 200px -100px;
+        margin: -50px -100px 200px -100px;
         &-text {
             margin-top: 50px;
             text-align: center;
-            max-width: 30ch;
-            margin-left: 30%;
+            // max-width: 30ch;
+            // margin-left: 30%;
+            width: 700px;
+            margin: 0 auto;
         }
         &__img {
             display: block;
             position: absolute;
             width: 600px;
-            top: 45%;
+            top: 50%;
             left: -115px;
         }
-        &__trame {
-            width: 720px;
-            right: -20%;
-            top: 52%;        
-        }
+        // &__trame {
+        //     width: 720px;
+        //     right: -20%;
+        //     top: 52%;        
+        // }
     }
 }

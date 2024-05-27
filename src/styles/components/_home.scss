@@ -1,10 +1,11 @@
 .intro {
-    margin: 0 0 150px -17px;
+    margin: 0 0 0px -17px;
     width: 100vw;
     height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    background-color: #ada5fc;
 
     &__img {
         display: none;
@@ -36,7 +37,8 @@ section{
         width: 100vw;
         height: 100vh;
         margin-bottom: 200px;
-        margin: -50px -100px 200px -100px;
+        margin: -50px 0 100px -17px;
+        padding: 0 0 100px 0;
         &-text {
             margin-top: 50px;
             text-align: center;

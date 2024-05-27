@@ -1,6 +1,7 @@
 @import 'utils/variables';
 @import 'components/home';
 @import 'components/menu';
+@import 'components/about';
 
 // @font-face {
 //     font-family: 'Batuphat Script' ;
@@ -51,20 +52,25 @@ a {
   text-decoration: none;
   color: black;
 }
+img {
+  width: 200px;
+}
+section {
+  margin: 0 0 0px -17px;
+}
   
 @media (min-width: 819px) {
-  body {
-    margin: 0 100px;
-  }
   h1 {
     font-size: 90px;
   //   margin-top: 170px;
   }
-  h2, .intro-text {
-    font-size: 40px;
+  h2 {
+    font-size: 78px;
   }
   h3, a {
-    font-size: 24px;
+    font-size: 28px;
   }
-
+  .intro-text{
+    font-size: 28px;
+  }
 }

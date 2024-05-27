@@ -42,10 +42,10 @@
 
 .menu--open .menu__list {
     transform: translateX(0);
-    background-color: #70A1C4;
+    background-color: #ada5fc;
     background-position: -20px -40px;
     z-index: 100;
-    margin: 0;
+    margin: 0 0 0 -40px;
 }
 
 .menu__links-container {
@@ -151,8 +151,8 @@ body.menu--open .fond-header {
 .sticky-menu a:hover,
 .sticky-menu .menu__el a.Mactive,
 .sticky-menu a:focus {
-    background-color: #E97EA7;
-    color: black;
+    background-color: #ff8430;
+    color: #19153c;
     border-radius: 25em;
     border-style: none;
 }
@@ -196,7 +196,7 @@ body.menu--open .fond-header {
         padding: 0;
         position: fixed;
         width: 100%;
-        background-color: #F4F4F4;
+        background-color: #ada5fc;
         transform: none;
     }
 
@@ -209,7 +209,7 @@ body.menu--open .fond-header {
 
     .menu__el a {
         padding: 5px 20px;
-        color: black;
+        color: #19153c;
     }
 
     .sticky-menu {
@@ -217,7 +217,7 @@ body.menu--open .fond-header {
         position: sticky;
         top: 0;
         z-index: 1;
-        background-color: #70A1C4;
+        background-color: #ada5fc;
     }
 
     .sticky-menu__list {
@@ -227,7 +227,7 @@ body.menu--open .fond-header {
 
     .sticky-menu ul {
         height: 80px;
-        color: black;
+        color: #19153c;
         margin: 0 auto;
         align-items: center;
         justify-content: center;

@@ -1,0 +1,58 @@
+.about {
+    width: 100vw;
+    padding: 100px 0 50px 0;
+
+    &__perso {
+        padding-bottom: 50px;
+
+        &-titre {
+            padding-bottom: 25px;
+        }
+        &-postit {
+            text-align: left;
+            margin: 0 17px;
+            padding: 25px 0;
+            background-color: #efff6d;
+        }
+        &-postit h3, p {
+            margin: 25px 34px;
+        }
+        
+    }
+
+    &__passion {
+        background-color: #efff6d;
+        margin: 25px 0 0 0;
+        padding: 50px 0 50px 0;
+    }
+}
+
+.front {
+    &-btn {
+        width: 43px;
+    }
+}
+
+@media (min-width: 820px) {
+    .about {
+        margin-top: -100px;
+        
+        &__perso {
+            display: flex;
+
+            &-titre {
+                padding: 0;
+            }
+        }
+
+        &__passion {
+            padding-bottom: 100px;
+        }
+    }
+
+    .front {
+        &-btn {
+            display: none;
+        }
+    }
+}

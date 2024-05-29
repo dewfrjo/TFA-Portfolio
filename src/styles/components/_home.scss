@@ -13,12 +13,12 @@
     &-text {
         margin: 0 17px;
     }
-    // &__trame {
-    //     position: absolute;
-    //     width: 620px;
-    //     right: -80%;
-    //     top: 55%;
-    // }
+    &__trame {
+        position: absolute;
+        width: 450px;
+        right: -80%;
+        top: 58%;
+    }
 }
 .base-imgH {
     overflow: hidden;
@@ -54,10 +54,10 @@ section{
             top: 50%;
             left: -115px;
         }
-        // &__trame {
-        //     width: 720px;
-        //     right: -20%;
-        //     top: 52%;        
-        // }
+        &__trame {
+            width: 620px;
+            right: -20%;
+            // top: 58%;        
+        }
     }
 }

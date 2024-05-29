@@ -91,3 +91,61 @@ if (burger) {
         burger.classList.toggle('active');
     });
 }
+
+// pour la rotation au surval de mes passions
+document.querySelectorAll('.passion').forEach(passion => {
+    passion.addEventListener('mouseover', function() {
+        const rotation = (Math.random() * 12) - 6; // Rotation aléatoire entre -6 et 6 degrés
+        const backText = this.querySelector('.bricoler__back, .jeu__back, .rando__back, .moto__back, .dessin__back');
+        backText.style.transform = `translateX(-50%) rotate(${rotation}deg)`;
+    });
+
+    passion.addEventListener('mouseout', function() {
+        const backText = this.querySelector('.bricoler__back, .jeu__back, .rando__back, .moto__back, .dessin__back');
+        backText.style.transform = 'translateX(-50%) rotate(0deg)';
+    });
+});
+
+//pour l'apparition de mon text lié au passion 
+// Sélectionnez tous les boutons et tous les éléments de texte
+document.querySelectorAll('.passion').forEach(passion => {
+    passion.addEventListener('mouseover', function() {
+        if (window.innerWidth >= 1024) { // Vérifie si la largeur de l'écran est au moins de 1024 pixels (version PC)
+            const rotation = (Math.random() * 12) - 6; // Rotation aléatoire entre -6 et 6 degrés
+            const backText = this.querySelector('.bricoler__back, .jeu__back, .rando__back, .moto__back, .dessin__back');
+            backText.style.transform = `translateX(-50%) rotate(${rotation}deg)`;
+        }
+    });
+
+    passion.addEventListener('mouseout', function() {
+        if (window.innerWidth >= 1024) { // Vérifie si la largeur de l'écran est au moins de 1024 pixels (version PC)
+            const backText = this.querySelector('.bricoler__back, .jeu__back, .rando__back, .moto__back, .dessin__back');
+            backText.style.transform = 'translateX(-50%) rotate(0deg)';
+        }
+    });
+});
+
+// Pour l'apparition du texte lié aux passions
+const btnPassions = document.querySelectorAll('.btn');
+const textPassions = document.querySelectorAll('.passion__text__mob');
+
+// Ajoutez un écouteur d'événements à chaque bouton
+btnPassions.forEach((btn, index) => {
+  btn.addEventListener('click', () => {
+    // Utilisez l'index pour trouver le paragraphe correspondant
+    const textPassion = textPassions[index];
+    if (window.innerWidth < 1024) { // Vérifie si la largeur de l'écran est inférieure à 1024 pixels (version mobile)
+      if (textPassion.classList.contains('show')) {
+        textPassion.classList.remove('show');
+        textPassion.classList.remove('show-text');
+        btn.classList.remove('rotate');
+      } else {
+        textPassion.classList.add('show-text');
+        setTimeout(() => {
+          textPassion.classList.add('show');
+          btn.classList.add('rotate');
+        }, 10); // Délai pour permettre le reflow
+      }
+    }
+  });
+});

@@ -6,14 +6,27 @@
         padding-bottom: 50px;
 
         &-titre {
-            padding-bottom: 25px;
+            padding: 20px;
+            background-color: #1F6933;
+            width: fit-content;
+            margin: 0 auto;
+            position: relative;
+            top: 26px;
+            color: #f4f4f4;
+            border-radius: 25px;
         }
         &-postit {
             text-align: left;
             margin: 0 17px;
             padding: 25px 0;
             background-color: #efff6d;
+
+            border-radius: 50px;
+            border-style: solid;
+            border: solid 2px black;
+            box-shadow: 12px 8px 4px black;
         }
+
         &-postit h3, p {
             margin: 25px 34px;
         }
@@ -24,35 +37,206 @@
         background-color: #efff6d;
         margin: 25px 0 0 0;
         padding: 50px 0 50px 0;
+
+        &__intro {
+            margin: 0 auto;
+            margin-top: 25px;
+            margin-bottom: 25px;
+        }
+
+        &__container {
+            overflow: hidden;
+        }
     }
 }
 
-.front {
-    &-btn {
-        width: 43px;
-    }
+// .front {
+//     &-btn {
+//         width: 43px;
+//     }
+// }
+
+// lier a mes passions
+.passion {
+    flex: 1 1 100%;
 }
+
+.passion__text__mob {
+    display: none;
+    opacity: 0;
+    transform: translateX(100%);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.passion__text__mob.show {
+    display: block;
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.passion__text__mob.show-text {
+    display: block; /* Afficher le texte */
+}
+
+// .bricoler__back, .jeu__back, .rando__back, .moto__back, .dessin__back {
+//     position: static;
+//     transform: translateX(100%);
+//     transition: transform 0.5s;
+// }
+
+// .passion__text-wrapper {
+//     display: none;
+// }
+
+// .passion__text-wrapper.active {
+//     display: block;
+// }
+
+// .passion__text-wrapper.active .bricoler__back,
+// .passion__text-wrapper.active .jeu__back,
+// .passion__text-wrapper.active .rando__back,
+// .passion__text-wrapper.active .moto__back,
+// .passion__text-wrapper.active .dessin__back {
+//     transform: translateX(0);
+// }
+
+.btn {
+    display: block;
+    margin: 10px auto;
+    width: 50px;
+    height: 50px;
+    background-image: url(../images/icon-suivant.svg);
+    background-repeat: no-repeat;
+    background-color: transparent;
+    border: 0;
+
+    transition: transform 0.5S ease;
+}
+
+.btn.rotate {
+    transform: rotate(180deg);
+}
+
 
 @media (min-width: 820px) {
     .about {
         margin-top: -100px;
-        
+
         &__perso {
             display: flex;
+            margin: 50px 0 -50px 0;
 
             &-titre {
                 padding: 0;
+                background-color: transparent;
+                margin: 0;
+                top: 40px;
+                color: #211f32;
+                border-radius: 0;
+                left: 34px;
+            }
+            &-postit {
+                z-index: 0;
+                width: 650px;
+                transform: rotate(6.505deg);
+                flex-shrink: 0;
+                position: relative;
+                right: -50px;
             }
         }
 
         &__passion {
             padding-bottom: 100px;
+            padding-top: 100px;
+
+            &__intro {
+                margin-top: 50px;
+                margin-bottom: 50px;
+                width: 700px;
+            }
+
+            &__container {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-items: center;
+                max-width: 1200px;
+                margin: 0 auto;
+                overflow: visible;
+            }
         }
     }
 
-    .front {
-        &-btn {
-            display: none;
-        }
+
+    .btn {
+        display: none;
+    }
+
+    // hover de mes passions
+    .passion {
+        position: relative;
+        display: inline-block;
+        cursor: pointer;
+        margin: 30px; /* Augmente l'espace entre les passions */
+        width: 300px;
+        // flex: 1 1 calc(33.333% - 40px); /* Ajuste la largeur en fonction de la nouvelle marge */
+        box-sizing: border-box;  
+        flex: none;  
+    }
+
+    .passion__text__mob {
+        display: block; /* Remettre à block si nécessaire ou 'initial' pour enlever tout display défini précédemment */
+        opacity: 1; /* Remettre à 1 pour la rendre visible */
+        transform: translateX(0); /* Remettre à sa position initiale */
+        transition: none; /* Supprimer les transitions si elles ne sont pas nécessaires */
+    }
+
+    .passion__text__mob.show {
+        display: block;
+        opacity: 1;
+        transform: none;
+    }    
+
+    .bricoler__back, .jeu__back, .rando__back, .moto__back, .dessin__back {
+        visibility: hidden;
+        opacity: 0;
+        width: 200px; /* Ajustez la largeur */
+        background-color: #1F6933;
+        color: #f4f4f4;
+        text-align: center;
+        border-radius: 5px;
+        padding: 17px;
+        position: absolute;
+        z-index: 0;
+        top: 50%; /* Positionne le texte en dessous de l'élément */
+        left: 50%;
+        transform: translateX(-50%);
+        transform: rotate(6.505deg);
+        transition: visibility 0s, opacity 0.5s linear;
+    }
+
+    .passion:hover .bricoler__back,
+    .passion:hover .jeu__back,
+    .passion:hover .rando__back,
+    .passion:hover .moto__back,
+    .passion:hover .dessin__back {
+        visibility: visible;
+        opacity: 1;
+    }
+
+    .passion__monstre {
+        transition: transform 0.5s;
+    }
+
+    .passion:hover .passion__monstre {
+        animation: shake 0.5s;
+        // animation-iteration-count: infinite;
+    }
+
+    @keyframes shake {
+        0% { transform: translateX(0); }
+        25% { transform: translateX(-5px); }
+        50% { transform: translateX(5px); }
+        100% { transform: translateX(0); }
     }
 }

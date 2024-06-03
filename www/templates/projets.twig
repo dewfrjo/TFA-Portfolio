@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>{{title}}</title>
+  <title>{{titlep}}</title>
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
@@ -11,6 +11,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <link rel="stylesheet" href="assets/styles/app.css">
+
+  <link rel="icon" href="assets/images/logo.svg">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -43,6 +45,48 @@
     </nav>
   </header>
   <main>
+
+    <h1 class="intro">Projets déjà réalisé</h1>
+    <section id="projet" class="projet">
+      <h2>Mes dernières réalisations</h2>
+      <img class="projet__spirale1" src="assets/images/fond-spiral.svg" alt="Dessin d'une grande spirale.">
+      <img class="projet__spirale2" src="assets/images/fond-spiral.svg" alt="Dessin d'une spirale.">
+      <div class="projet__grid">
+        <div class="projet-text">
+          <h3>{{projet_data.projet1.name}}: {{projet_data.projet1.date}}</h3>
+          <p>{{projet_data.projet1.description}}</p>
+        </div>
+        <a class="projet__imgR" href="https://jonathan-dewandre.be/projets/iolceaout/"><img class="projet__imgR" src={{projet_data.projet1.projet_img1}} alt="Page home du projet."></a>
+        <button class="btnP projet__btn1"><a class="btnP projet__btn" href="https://jonathan-dewandre.be/projets/iolceaout/">Voir le projet</a></button>
+        <img class="projet__imgRinstal" src={{projet_data.projet1.projet_img2}} alt="">
+      </div>
+      <img class="projet__main" src="assets/images/mainD.svg" alt="Dessin d'une main d'un des monstre qui tiens une photo du projet">
+      <div class="partieProjets">
+        <img class="projet-imgM" src="assets/images/perso-feu-1.svg" alt="Petit monstre en forme de flamme qui se trouve devant le boutons pour acceder a ma page avec mes projets">
+      </div>
+
+      <div class="projet__grid">
+        <div class="projet-text texttfa">
+          <h3>{{projet_data.projet2.name}}: {{projet_data.projet2.date}}</h3>
+          <p>{{projet_data.projet2.description}}</p>
+        </div>
+        <a class="projet__imgR" href="https://jonathan-dewandre.be/projets/tfaaout/"><img class="projet__imgR" src={{projet_data.projet2.projet_img1}} alt="Page home du projet."></a>
+        <button class="btnP projet__btn1 btntfa"><a class="btnP projet__btn" href="https://jonathan-dewandre.be/projets/tfaaout/">Voir le projet</a></button>
+      </div>
+      <div class="partieProjets">
+      </div>
+
+      <div class="projet__grid">
+        <div class="projet-text">
+          <h3>{{projet_data.projet3.name}}: {{projet_data.projet3.date}}</h3>
+          <p>{{projet_data.projet3.description}}</p>
+        </div>
+        <a class="projet__imgR" href="https://jonathan-dewandre.be/projets/rethinking-ux/"><img class="projet__imgR" src={{projet_data.projet3.projet_img1}} alt="Page home du projet."></a>
+        <button class="btnP projet__btn1"><a class="btnP projet__btn" href="https://jonathan-dewandre.be/projets/rethinking-ux/">Voir le projet</a></button>
+        <img class="projet__imgRinstal" src={{projet_data.projet3.projet_img2}} alt="">
+      </div>
+      <img class="projet__main" src="assets/images/mainD.svg" alt="Dessin d'une main d'un des monstre qui tiens une photo du projet">
+    </section>
   </main>
   <footer>
   </footer>

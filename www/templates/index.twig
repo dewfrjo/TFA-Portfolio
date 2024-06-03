@@ -129,35 +129,50 @@
 
     <section id="projet" class="projet">
       <h2>Ma dernière réalisation</h2>
-      {# <img src="" alt="Page home du projet refait par mes soins a la main dans le même style que mes monstres."> #}
       <img class="projet__spirale1" src="assets/images/fond-spiral.svg" alt="Dessin d'une grande spirale.">
       <img class="projet__spirale2" src="assets/images/fond-spiral.svg" alt="Dessin d'une spirale.">
-
-      <div class="projet-text">
-        <h3>Projet RUX : 2023-2024</h3>
-        <p>Projet qui avait pour but de personnalisé nos locaux avec un intérêt pour l'option. Ce projet fut très intéressant et constructif pour moi, car c’est le premier vrai projet qu’on a mis en place de A à Z et le voir se concrétiser. La conception, la réalisation et la pose dans nos locaux ont été effectuées par les membres du groupe.</p>
+      <div class="projet__grid">
+        <div class="projet-text">
+          <h3>Projet RUX : 2023-2024</h3>
+          <p>Projet qui avait pour but de personnalisé nos locaux avec un intérêt pour l'option. Ce projet fut très intéressant et constructif pour moi, car c’est le premier vrai projet qu’on a mis en place de A à Z et le voir se concrétiser. La conception, la réalisation et la pose dans nos locaux ont été effectuées par les membres du groupe.</p>
+        </div>
+        <a class="projet__imgR" href="https://jonathan-dewandre.be/projets/rethinking-ux/"><img class="projet__imgR" src="assets/images/rux.jpg" alt="Page home du projet."></a>
+        <button class="btnP projet__btn1"><a class="btnP projet__btn" href="https://jonathan-dewandre.be/projets/rethinking-ux/">Voir le projet</a></button>
+        <img class="projet__imgRinstal" src="assets/images/rux-instal.jpg" alt="photo lors de la mise en place du projet.">
       </div>
-      <button><a class="btnP projet__btn1" href="/projets">Voir le projet</a></button>
-      {# <img src="" alt="photo lors de la mise en place du projet."> #}
       <img class="projet__main" src="assets/images/mainD.svg" alt="Dessin d'une main d'un des monstre qui tiens une photo du projet">
-
-      <img class="projet-imgM" src="assets/images/perso-feu-1.svg" alt="Petit monstre en forme de flamme qui se trouve devant le boutons pour acceder a ma page avec mes projets">
-      <button><a class="btnP projet__btnfull" href="/projets">Voir mes autres projets</a></button>
-
+      <div class="partieProjets">
+        <img class="projet-imgM" src="assets/images/perso-feu-1.svg" alt="Petit monstre en forme de flamme qui se trouve devant le boutons pour acceder a ma page avec mes projets">
+        <button class="btnP projet__btnfull"><a class="btnP projet__btnf" href="/projets">Voir mes autres projets</a></button>
+      </div>
     </section>
 
     {# voir pour mon parralax #}
 
-    <section id="motivation" class="motivation">
-    <div class="">
-      {# <img class="motivation-img" src="assets/images/perso-vert-2.svg" alt="petit monstre avec un air étonné"> #}
-      <h2>Motivations</h2>
-      <p>J’aimerais qu’avec les stages je puisse  avoir un aperçu réel de ce qu’est le métier de webdesigner sur le terrain et de pouvoir traiter des vrais cas de clients. Découvrir d’autres personnes et façon de travailler et d'autres lieux / cadre de travail que celui de l’école.</p>
+  <section id="motivation" class="motivation">
+    <div class="motivation__container">
+      <div class="motivation__para para1">
+        <h2 id="titre1" class="typewriter">Motivations</h2>
+      </div>
+      <div class="motivation__para para2">
+        <h2 id="titre2" class="typewriter">Compétences</h2>
+      </div>
+      <div class="motivation__para para3">
+        <h2 id="titre3" class="typewriter">Espérances</h2>
+      </div>
+      <div class="motivation__para para4">
+        <h2 id="titre4" class="typewriter">Motivations</h2>
+        <p>J’aimerais qu’avec les stages je puisse avoir un aperçu réel de ce qu’est le métier de webdesigner sur le terrain et de pouvoir traiter des vrais cas de clients. Découvrir d’autres personnes et façon de travailler et d'autres lieux / cadre de travail que celui de l’école.</p>
+        <button><a href="">Voir en détail ici !</a></button>
+      </div>
     </div>
     <img class="motivation-img" src="assets/images/base-deco.svg" alt="Tous mes petits monstres">
-    </section>
+  </section>
+
   </main>
   <footer>
+    <a href="/credit">Crédits</a>
+    <small class="credits"> DWT_@ 2024 - Dewandre Jonathan</small>
   </footer>
   <script src="assets/scripts/app.js"></script>
 </body>

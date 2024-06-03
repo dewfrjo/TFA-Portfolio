@@ -149,3 +149,93 @@ btnPassions.forEach((btn, index) => {
     }
   });
 });
+
+
+// pour l'apparition de mes titres
+let animationStarted = false;
+
+function runYourCode() {
+    function typeWriter(element, text, delay) {
+        let i = 0;
+        function typing() {
+            if (i < text.length) {
+                element.innerHTML += text.charAt(i);
+                i++;
+                setTimeout(typing, delay);
+            }
+        }
+        typing();
+    }
+
+    const observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            const element = entry.target;
+            const text = element.getAttribute('data-text');
+            if (entry.isIntersecting) {
+                if (!element.classList.contains('typed')) {
+                    element.classList.add('typed');
+                    typeWriter(element, text, 100);
+                }
+            } else {
+                if (element.classList.contains('typed')) {
+                    element.classList.remove('typed');
+                    element.innerHTML = '';
+                }
+            }
+        });
+    }, { threshold: 0.5 });
+
+    document.querySelectorAll('.typewriter').forEach(element => {
+        element.setAttribute('data-text', element.textContent);
+        element.textContent = '';
+        observer.observe(element);
+    });
+
+    console.log("Le code JS est actif.");
+    
+    // Exemple d'animation de titre
+    const title = document.getElementById('title');
+    if (title) {
+        title.innerHTML = "";  // Assurez-vous que le titre est vide avant de commencer l'animation
+        let text = "Votre titre animé";
+        let index = 0;
+
+        function titleTypeWriter() {
+            if (index < text.length) {
+                title.innerHTML += text.charAt(index);
+                index++;
+                setTimeout(titleTypeWriter, 200); // Ajustez le délai selon vos besoins
+            }
+        }
+
+        titleTypeWriter();
+    }
+}
+
+function checkWindowSize() {
+    if (window.innerWidth >= 820) {
+        if (!animationStarted) {
+            animationStarted = true;
+            runYourCode();
+        }
+    } else {
+        if (animationStarted) {
+            animationStarted = false;
+            const title = document.getElementById('title');
+            if (title) {
+                title.innerHTML = "";  // Réinitialiser le titre si la fenêtre est redimensionnée en dessous de 820px
+            }
+            // Réinitialiser les éléments typewriter
+            document.querySelectorAll('.typewriter').forEach(element => {
+                element.classList.remove('typed');
+                element.innerHTML = '';
+            });
+        }
+    }
+}
+
+// Exécuter la vérification au chargement de la page
+window.addEventListener('load', checkWindowSize);
+
+// Exécuter la vérification lors du redimensionnement de la fenêtre
+window.addEventListener('resize', checkWindowSize);

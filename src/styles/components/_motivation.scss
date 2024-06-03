@@ -1,4 +1,64 @@
+.motivation {
+    padding: 0 0 50px 0;
 
+}
+
+.typewriter{
+    padding: 25px 0 25px 0;
+}
 
 @media (min-width: 820px) {
+      .motivation {
+        width: 100%;
+        position: relative;
+        padding: 0;
+
+        &__container {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+        }
+
+        &__para {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            position: sticky;
+            top: 100px;
+            width: 100vw;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        &-img {
+            position: absolute;
+            bottom: 0;
+        }
+      }
+
+      .para1 {
+        z-index: -3;
+        background-image: url(../images/fond-para-1.png);
+        background-repeat: no-repeat;
+      }
+      .para2 {
+        z-index: -2;
+        background-image: url(../images/fond-para-2.png);
+        background-repeat: no-repeat;
+      }
+      .para3 {
+        z-index: -1;
+        background-image: url(../images/fond-para-3.png);
+        background-repeat: no-repeat;
+      }
+      .para4 {
+        z-index: 0;
+        background-image: url(../images/fond-para-4.png);
+        background-repeat: no-repeat;
+        flex-direction: column;
+      }
+      .typewriter{
+        padding: 0 0 0 0;
+    }
 }

@@ -1,0 +1,97 @@
+.intro__competence {
+    font-size: 23px;
+    margin-bottom: 50px;
+}
+
+.competences {
+    &-titre {
+        background-color: transparent;
+        color: black;
+    }
+    &-text {
+        padding-top: 25px;
+        text-align: start;
+
+        &__intro {
+            text-align: left;
+            margin: 25px 17px;
+            padding: 25px;
+            background-color: #efff6d;
+
+            border-radius: 50px;
+            border-style: solid;
+            border: solid 2px black;
+            box-shadow: 12px 8px 4px black;
+        }
+    }
+}
+
+.motivations,
+.competences,
+.stage {
+    margin: 25px 0 25px 0;
+}
+.motivations {
+    margin-top: 50px;
+}
+.stage {
+    margin-bottom: 50px;
+
+    &__text {
+        padding: 25px 0 25px 0;
+    }
+}
+
+@media (min-width: 820px) {
+    .intro__competence {
+        text-align: center;
+    }
+
+    .motivations {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 50px;
+    }
+
+    .competences {
+        margin: 0 0 50px 0;
+
+        &-titre {
+            transform: rotate(-6.505deg);
+            margin-left: 150px;
+            margin-bottom: 100px;
+        }
+
+        &-text {
+            &__intro {
+                width: 45%;
+                margin: 0 auto;
+
+                z-index: 0;
+                transform: rotate(6.505deg);
+                flex-shrink: 0;
+                position: relative;
+                right: -50px;
+            }
+        }
+
+    }
+    .stage{
+
+        background-image: url(../images/cadre-projet.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin: 0 auto;
+        padding-bottom: 50px;
+        padding-top: 50px;
+
+        &__text {
+            text-align: start;
+            width: 750px;
+            margin: 0 auto;
+            padding: 25px;
+        }
+    }
+
+}

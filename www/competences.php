@@ -5,10 +5,10 @@ require 'includes/functions.php';
 $twig = getTwigInstance();
 
 $tpl_data = [
-    'title' => 'Portfolio'
+    'titlec' => 'Compétences'
 ];
 
 // Chargement du template approprié
-$template = $twig->load('index.twig');
+$template = $twig->load('competences.twig');
 echo $template->render($tpl_data);
 ?>

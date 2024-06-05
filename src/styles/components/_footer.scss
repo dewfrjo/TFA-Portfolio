@@ -1,0 +1,132 @@
+footer {
+    flex-shrink: 0;
+    border-top: 1px dashed #000;
+    width: 100%;
+    background-color: #ada5fc;
+    margin: 0 0 0 -17px;
+    padding-right: 34px;
+    padding-top: 25px;
+}
+
+.footer-contenu {
+    width: 320px;
+}
+
+footer h3 {
+    padding-bottom: 25px;
+}
+
+.bloc {
+    width: 300px;
+    margin: 30px 30px;
+    text-align: center;
+}
+
+.bloc:nth-child(1),
+.bloc:nth-child(2) {
+    margin-bottom: 30px;
+}
+.bloc:nth-child(1) {
+    margin-top: 0;
+}
+
+
+.liste-annexe,
+.liste-contact,
+.liste-media {
+    list-style-type: none;
+}
+
+.liste-annexe a,
+.liste-contact a,
+.liste-media a {
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.liste-annexe a:hover,
+.liste-contact a:hover,
+.liste-media a:hover {
+    background-color: #ff8430;
+    color: #19153c;
+    border-radius: 25em;
+    border-style: none;
+    padding: 5px 25px 5px 25px;
+}
+
+.liste-annexe li,
+.liste-contact li,
+.liste-media li {
+    padding: 2px 0;
+    text-align: start;
+    position: relative;
+    left: 40px;
+}
+
+.liste-media img {
+    width: 40px;
+    margin: 10px 10px;
+}
+.liste-media a {
+    display: flex;
+    align-items: center;
+}
+
+@media screen and (min-width: 820px) {
+
+    .footer-contenu {
+        width: 700px;
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 auto;
+    }
+    .bloc {
+        width: 40%;
+        margin: 0 0;
+    }
+    .bloc:nth-child(1),
+    .bloc:nth-child(2) {
+        margin-bottom: 50px;
+    }
+    
+}
+
+@media (min-width: 1301px) {
+
+    .footer {
+
+        &-contenu {
+            width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            padding: 50px 0 100px;
+        }
+    
+    }
+
+    .bloc {
+        width: 25%;
+        margin: 0 30px;
+    }
+
+    .liste-annexe li,
+    .liste-contact li,
+    .liste-media li {
+        left: 20px;
+    }
+
+    .liste-annexe a,
+    .liste-contact a,
+    .liste-media a {
+        font-size: 18px;
+    }
+
+    .liste-media {
+        position: relative;
+        right: 10px;
+    }
+
+
+}

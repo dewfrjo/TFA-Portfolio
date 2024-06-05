@@ -66,23 +66,33 @@
     opacity: 0;
     transform: translateX(100%);
     transition: opacity 0.5s ease, transform 0.5s ease;
+    text-align: start;
 }
 
 .passion__text__mob.show {
     display: block;
     opacity: 1;
     transform: translateX(0);
+
+    position: relative;
+    background-color: #1F6933;
+    color: #f4f4f4;
+    left: 205px;
+    /* top: -325px; */
+    margin-top: -325px;
+    margin-bottom: 200px;
+    padding: 25px;
+    border-radius: 2em;
 }
 
 .passion__text__mob.show-text {
     display: block; /* Afficher le texte */
+    width: 320px;
 }
 
-// .bricoler__back, .jeu__back, .rando__back, .moto__back, .dessin__back {
-//     position: static;
-//     transform: translateX(100%);
-//     transition: transform 0.5s;
-// }
+.bricoler__back, .jeu__back, .rando__back, .moto__back, .dessin__back {
+    margin-bottom: 50px;
+}
 
 // .passion__text-wrapper {
 //     display: none;
@@ -239,4 +249,36 @@
         50% { transform: translateX(5px); }
         100% { transform: translateX(0); }
     }
+
+    .btnP.projet__btnfull {
+        position: relative;
+    }
+    
+    // .btnP.projet__btnfull a {
+    //     display: block;
+    //     width: 100%;
+    //     height: 100%;
+    // }
+
+    .btnP.projet__btnfull::after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 100%;
+        height: 200%;
+        background: url(../images/deco-btnM.svg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        transition: all 0.3s ease;
+        z-index: -1;
+        transform: translate(-50%, -50%) scale(0);
+        padding-bottom: 50px;
+        padding-right: 10px;
+    }
+    
+    .btnP.projet__btnfull:hover::after {
+        transform: translate(-50%, -50%) scale(1);
+    }
+    
 }

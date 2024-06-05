@@ -57,7 +57,18 @@ section{
         &__trame {
             width: 620px;
             right: -20%;
-            // top: 58%;        
+            // top: 58%;
+            
+            animation: rotation 20s linear infinite;
+        }
+    }
+
+    @keyframes rotation {
+        from {
+            transform: rotate(0deg);
+        }
+        to {
+            transform: rotate(360deg);
         }
     }
 }

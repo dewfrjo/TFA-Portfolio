@@ -37,9 +37,9 @@
       </div>
       <div class="menu__links-container" id="menuLinksContainer">
         <ul class="menu__list">
-          <li class="menu__el" id="home"><a href="/">Accueil</a></li>
-          <li class="menu__el" id="a-propos"><a href="/projets">Projets</a></li>
-          <li class="menu__el" id="projets"><a href="/competences">Compétences</a></li>
+          <li class="menu__el" id="home"><a href="index.php">Accueil</a></li>
+          <li class="menu__el" id="projets"><a href="#projet">Projets</a></li>
+          <li class="menu__el" ><a href="competences.php">Compétences</a></li>
         </ul>
       </div>
     </nav>
@@ -88,8 +88,37 @@
       <img class="projet__main" src="assets/images/mainD.svg" alt="Dessin d'une main d'un des monstre qui tiens une photo du projet">
     </section>
   </main>
+
   <footer>
+
+    <div class="footer-contenu">
+      <div class="bloc footer-credit">
+        <h3>Pages annexes</h3>
+        <ul class="liste-annexe">
+          <li><a href="credit.php">Crédits</a></li>
+        </ul>
+      </div>
+
+      <div class="bloc footer-contact">
+        <h3>Me contacter</h3>
+        <ul class="liste-contact">
+          <li><a href="mailto:dewandre.jonathan@gmail.com">Mon mail</a></li>
+        </ul>
+      </div>
+
+      <div class="bloc footer-media">
+        <h3>Mes réseaux</h3>
+        <ul class="liste-media">
+          <li><a href="https://www.instagram.com/dewfrjo/"><img src="assets/images/icon-insta.svg" alt="Icones instagram">Instagram</a></li>
+          {# <li><a href=""><img src="" alt="Icones Linkedin"></a></li> #}
+        </ul>
+      </div>
+
+    </div>
+
+    <small class="credits"> DWT_@ 2024 - Dewandre Jonathan</small>
   </footer>
+  
   <script src="assets/scripts/app.js"></script>
 </body>
 </html>

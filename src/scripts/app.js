@@ -204,7 +204,7 @@ function runYourCode() {
             if (index < text.length) {
                 title.innerHTML += text.charAt(index);
                 index++;
-                setTimeout(titleTypeWriter, 200); // Ajustez le délai selon vos besoins
+                setTimeout(titleTypeWriter, 300); // Ajustez le délai selon vos besoins
             }
         }
 

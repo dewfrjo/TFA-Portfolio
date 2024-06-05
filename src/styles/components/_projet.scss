@@ -136,6 +136,56 @@ button{
 
         &-imgM {
             width: 120px;
+            z-index: -1;
         }
     }
+
+    .projet__spirale1 {
+        animation: rotation2 40s linear infinite;
+    }
+
+    @keyframes rotation2 {
+        from {
+            transform: rotate(0deg);
+        }
+        to {
+            transform: rotate(360deg);
+        }
+    }
+
+    .projet__spirale2 {
+        animation: rotation3 15s linear infinite;
+    }
+
+    @keyframes rotation3 {
+        from {
+            transform: rotate(0deg);
+        }
+        to {
+            transform: rotate(-360deg);
+        }
+    }
+
+    .projet-imgM {
+        animation: tremblement 0.1s infinite; /* Applique l'animation de tremblement */
+    }
+    
+    @keyframes tremblement {
+        0% {
+            transform: translateX(-1px); /* Légère translation vers le haut et la gauche */
+        }
+        25% {
+            transform: translateX(1px); /* Légère translation vers le bas et la droite */
+        }
+        50% {
+            transform: translateX(2px); /* Légère translation vers le haut et la droite */
+        }
+        75% {
+            transform: translateX(2px); /* Légère translation vers le bas et la gauche */
+        }
+        100% {
+            transform: translateX(1px); /* Retour à la position initiale */
+        }
+    }
+    
 }

@@ -270,10 +270,9 @@
         width: 100%;
         height: 200%;
         background: url(../images/deco-btnM.svg);
-        background-size: cover;
         background-repeat: no-repeat;
         transition: all 0.3s ease;
-        z-index: -1;
+        z-index: 0;
         transform: translate(-50%, -50%) scale(0);
         padding-bottom: 50px;
         padding-right: 10px;

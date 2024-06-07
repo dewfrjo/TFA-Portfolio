@@ -560,10 +560,9 @@ body.menu--open .fond-header {
     width: 100%;
     height: 200%;
     background: url(../images/deco-btnM.svg);
-    background-size: cover;
     background-repeat: no-repeat;
     transition: all 0.3s ease;
-    z-index: -1;
+    z-index: 0;
     transform: translate(-50%, -50%) scale(0);
     padding-bottom: 50px;
     padding-right: 10px;
@@ -646,19 +645,19 @@ button {
   border: none;
 }
 
-.btnP a {
+.btnP {
   background-color: #ada5fc;
   padding: 5px 20px;
   border-radius: 25em;
   border-style: none;
 }
 
-.btnP a:hover {
+.btnP:hover {
   background-color: #ff8430;
   border-style: solid 2px #211f32;
 }
 
-.btnP a {
+.btnP {
   font-size: 18px;
 }
 
@@ -921,17 +920,16 @@ button {
   .btnP.btnComp::after {
     content: "";
     position: absolute;
-    top: 50%;
+    top: 60%;
     left: 50%;
     width: 100%;
     height: 200%;
     background: url(../images/deco-btn-action.svg);
-    background-size: cover;
     background-repeat: no-repeat;
     transition: all 0.3s ease;
-    z-index: -1;
+    z-index: 0;
     transform: translate(-50%, -50%) scale(0);
-    padding-bottom: 55px;
+    padding-bottom: 30px;
     padding-right: 10px;
   }
 
@@ -1223,15 +1221,17 @@ footer h3 {
 }
 
 .btnC {
-  margin-top: 25px;
-  margin-bottom: 25px;
+  margin: 25px auto;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0 auto;
 }
 
-.btnC a {
+.btnC {
   border: solid 2px black;
 }
 
-.btnC a:hover {
+.btnC:hover {
   border: none;
 }
 
@@ -1284,7 +1284,6 @@ footer h3 {
 
 @media screen and (min-width: 820px) {
   .btnC {
-    margin: 0;
     padding: 25px;
     font-family: "Plus Jakarta Sans", sans-serif;
     font-size: 28px;

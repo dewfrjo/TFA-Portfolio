@@ -75,27 +75,20 @@
     .btnP.btnComp {
       position: relative;
   }
-  
-  // .btnP.projet__btnfull a {
-  //     display: block;
-  //     width: 100%;
-  //     height: 100%;
-  // }
 
   .btnP.btnComp::after {
       content: "";
       position: absolute;
-      top: 50%;
+      top: 60%;
       left: 50%;
       width: 100%;
       height: 200%;
       background: url(../images/deco-btn-action.svg);
-      background-size: cover;
       background-repeat: no-repeat;
       transition: all 0.3s ease;
-      z-index: -1;
+      z-index: 0;
       transform: translate(-50%, -50%) scale(0);
-      padding-bottom: 55px;
+      padding-bottom: 30px;
       padding-right: 10px;
   }
   

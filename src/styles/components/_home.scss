@@ -50,8 +50,8 @@ section{
         &__img {
             display: block;
             position: absolute;
-            width: 600px;
-            top: 50%;
+            width: 400px;
+            top: 55%;
             left: -115px;
         }
         &__trame {
@@ -59,16 +59,36 @@ section{
             right: -20%;
             // top: 58%;
             
-            animation: rotation 20s linear infinite;
+        }
+    }
+}
+.intro__trame {
+    animation: rotation 20s linear infinite;
+}
+@media (min-width: 1040px) {
+    .intro {
+        &__img {
+            width: 500px;
+        }
+    }
+}
+
+@media (min-width: 1120px) {
+    .intro {
+        &__img {
+            width: 600px;
+            top: 50%;
         }
     }
 
-    @keyframes rotation {
-        from {
-            transform: rotate(0deg);
-        }
-        to {
-            transform: rotate(360deg);
-        }
+}
+
+
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
     }
 }

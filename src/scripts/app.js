@@ -213,7 +213,7 @@ function runYourCode() {
 }
 
 function checkWindowSize() {
-    if (window.innerWidth >= 820) {
+    if (window.innerWidth >= 819) {
         if (!animationStarted) {
             animationStarted = true;
             runYourCode();

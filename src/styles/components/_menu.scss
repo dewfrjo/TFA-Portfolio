@@ -231,6 +231,12 @@ body.menu--open .fond-header {
         color: #19153c;
         margin: 0 auto;
         align-items: center;
+        justify-content: end;
+    }
+}
+
+@media (min-width: 1040px) {
+    .sticky-menu ul {
         justify-content: center;
     }
 }

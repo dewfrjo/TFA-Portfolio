@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>{{titlep}}</title>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <meta name="description" content="">
+  <!-- Meta Partage -->
+  <!-- Favicon -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="assets/styles/app.css">
+
+  <link rel="icon" href="assets/images/logo.svg">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bad+Script&family=Hind+Siliguri:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bad+Script&family=Fira+Sans+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Hind+Siliguri:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+
+</head>
+<body>
+  <header>
+    <a class="logo" href="/"><img src="assets/images/logo.svg" alt="Logo qui représente un oeil d'un de mes dessins"></a>
+    <nav class="sticky-menu menu sticky">
+      <div class="menu__burger burger">
+        <p class="Tbtn">menu</p>
+        <span></span>
+      </div>
+      <div class="menu__links-container" id="menuLinksContainer">
+        <ul class="menu__list">
+          <li class="menu__el" id="home"><a href="index.php">Accueil</a></li>
+          <li class="menu__el" id="projets"><a href="#projet">Projets</a></li>
+          <li class="menu__el" ><a href="competences.php">Compétences</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <main>
+
+    <h1 class="intro">Projets déjà réalisé</h1>
+    <img class="img-suspendu" src="assets/images/perso-suspendu-2.svg" alt="">
+    <section id="projet" class="projet">
+      <h2>Mes dernières réalisations</h2>
+      <img class="projet__spirale1" src="assets/images/fond-spiral.svg" alt="Dessin d'une grande spirale.">
+      <img class="projet__spirale2" src="assets/images/fond-spiral.svg" alt="Dessin d'une spirale.">
+      <div class="projet__grid">
+        <div class="projet-text">
+          <h3>{{projet_data.projet1.name}}: {{projet_data.projet1.date}}</h3>
+          <p>{{projet_data.projet1.description}}</p>
+        </div>
+        <a class="projet__imgR" href="https://jonathan-dewandre.be/projets/iolceaout/"><img class="projet__imgR" src={{projet_data.projet1.projet_img1}} alt="Page home du projet."></a>
+        <button class="btnP projet__btn1"><a class="btnP projet__btn" href="https://jonathan-dewandre.be/projets/iolceaout/">Voir le projet</a></button>
+        <img class="projet__imgRinstal" src={{projet_data.projet1.projet_img2}} alt="">
+      </div>
+      <img class="projet__main" src="assets/images/mainD.svg" alt="Dessin d'une main d'un des monstre qui tiens une photo du projet">
+      <div class="partieProjets">
+        <img class="projet-imgM partie__feu" src="assets/images/perso-feu-1.svg" alt="Petit monstre en forme de flamme qui se trouve devant le boutons pour acceder a ma page avec mes projets">
+      </div>
+
+      <div class="projet__grid">
+        <div class="projet-text texttfa">
+          <h3>{{projet_data.projet2.name}}: {{projet_data.projet2.date}}</h3>
+          <p>{{projet_data.projet2.description}}</p>
+        </div>
+        <a class="projet__imgR" href="https://jonathan-dewandre.be/projets/tfaaout/"><img class="projet__imgR" src={{projet_data.projet2.projet_img1}} alt="Page home du projet."></a>
+        <button class="btnP projet__btn1 btntfa"><a class="btnP projet__btn" href="https://jonathan-dewandre.be/projets/tfaaout/">Voir le projet</a></button>
+      </div>
+      <div class="partieProjets">
+      </div>
+
+      <div class="projet__grid">
+        <div class="projet-text">
+          <h3>{{projet_data.projet3.name}}: {{projet_data.projet3.date}}</h3>
+          <p>{{projet_data.projet3.description}}</p> <br>
+          <p>{{projet_data.projet3.point__positif}}</p>
+        </div>
+        <a class="projet__imgR" href="https://jonathan-dewandre.be/projets/rethinking-ux/"><img class="projet__imgR" src={{projet_data.projet3.projet_img1}} alt="Page home du projet."></a>
+        <button class="btnP projet__btn1"><a class="btnP projet__btn" href="https://jonathan-dewandre.be/projets/rethinking-ux/">Voir le projet</a></button>
+        <img class="projet__imgRinstal" src={{projet_data.projet3.projet_img2}} alt="">
+      </div>
+      <img class="projet__main" src="assets/images/mainD.svg" alt="Dessin d'une main d'un des monstre qui tiens une photo du projet">
+    </section>
+  </main>
+
+  <footer>
+
+    <div class="footer-contenu">
+      <div class="bloc footer-credit">
+        <h3>Pages annexes</h3>
+        <ul class="liste-annexe">
+          <li><a href="credit.php">Crédits</a></li>
+        </ul>
+      </div>
+
+      <div class="bloc footer-contact">
+        <h3>Me contacter</h3>
+        <ul class="liste-contact">
+          <li><a href="mailto:dewandre.jonathan@gmail.com">Mon mail</a></li>
+        </ul>
+      </div>
+
+      <div class="bloc footer-media">
+        <h3>Mes réseaux</h3>
+        <ul class="liste-media">
+          <li><a href="https://www.instagram.com/dewfrjo/"><img src="assets/images/icon-insta.svg" alt="Icones instagram">Instagram</a></li>
+          {# <li><a href=""><img src="" alt="Icones Linkedin"></a></li> #}
+        </ul>
+      </div>
+
+    </div>
+
+    <small class="credits"> DWT_@ 2024 - Dewandre Jonathan</small>
+  </footer>
+  
+  <script src="assets/scripts/app.js"></script>
+</body>
+</html>

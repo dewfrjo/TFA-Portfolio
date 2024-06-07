@@ -13,8 +13,8 @@ require('laravel-mix-serve');
  */
 
 mix
-  .copyDirectory('src/assets', 'www/assets')
-  .js('src/scripts/app.js', 'www/assets/scripts/')
+  .copyDirectory('src/assets', 'tfa/assets')
+  .js('src/scripts/app.js', 'tfa/assets/scripts/')
   .sass('src/styles/app.scss', 'assets/styles/')
   .options({
     processCssUrls: false,
@@ -28,14 +28,14 @@ mix
     }
   })
   .sourceMaps()
-  .setPublicPath('www')
+  .setPublicPath('tfa')
   .browserSync({
     proxy: '127.0.0.1:5000',
     files: [
-      'www/**/*'
+      'tfa/**/*'
     ]
   })
-  .serve('php -S 127.0.0.1:5000 -t ./www', {
+  .serve('php -S 127.0.0.1:5000 -t ./tfa', {
       verbose: true,
       watch: true,
       dev: true,

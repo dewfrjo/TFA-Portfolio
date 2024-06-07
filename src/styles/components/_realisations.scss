@@ -1,9 +1,29 @@
+.img-suspendu {
+    position: absolute;
+    top: 485px;
+    left: 90px;
+    transform: rotate(6deg);
+}
+.partie__feu{
+    display: none;
+}
+
 @media (min-width: 820px) {
+    .img-suspendu {
+        top: 346px;
+        left: 50%;
+    }
     .texttfa{
         grid-row: 2;
     }
     .btntfa {
-        grid-row: 2;
+        grid-row: 3;
         margin: 0 0 250px 0;
+    }
+}
+
+@media (min-width: 840px) {
+    .partie__feu{
+        display: block;
     }
 }

@@ -4,6 +4,7 @@
 
     &__perso {
         padding-bottom: 50px;
+        justify-content: center;
 
         &-titre {
             padding: 20px;
@@ -134,7 +135,7 @@
 
         &__perso {
             display: flex;
-            margin: 50px 0 -50px 0;
+            margin: 50px 0 -50px -90px;
 
             &-titre {
                 padding: 0;
@@ -144,10 +145,11 @@
                 color: #211f32;
                 border-radius: 0;
                 left: 34px;
+                width: 360px;
             }
             &-postit {
                 z-index: 0;
-                width: 650px;
+                width: 350px;
                 transform: rotate(6.505deg);
                 flex-shrink: 0;
                 position: relative;
@@ -281,4 +283,37 @@
         transform: translate(-50%, -50%) scale(1);
     }
     
+}
+
+@media (min-width: 1040px) {
+    .about__perso-postit {
+        z-index: 0;
+        width: 450px;
+        transform: rotate(6.505deg);
+        flex-shrink: 0;
+        position: relative;
+        right: 6px;
+    }
+
+    .about__perso-titre {
+        width: 360px;
+        padding-right: 25px;
+    }
+}
+
+@media (min-width: 1120px) {
+
+    .about__perso-postit {
+        width: 450px;
+        right: -50px;
+    }
+
+
+}
+
+@media (min-width: 1340px) {
+    .about__perso-postit {
+        width: 650px;
+        right: -50px;
+    }
 }

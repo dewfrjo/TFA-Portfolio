@@ -71,6 +71,12 @@ button{
 }
 
 @media (min-width: 820px) {
+    .projet__spirale1 {
+        margin-top: 225px;
+    }
+}
+
+@media (min-width: 840px) {
 
     .projet {
         padding-top: 25px;
@@ -87,28 +93,34 @@ button{
         &__spirale1 {
             display: block;
 
-            width: 600px;
+            width: 450px;
             position: absolute;
             left: 10px;
-            margin-top: 150px;
+            margin-top: 125px;
             z-index: -1;
         }
 
         &__spirale2{
-            width: 350px;
+            // width: 350px;
             transform: rotate(45deg);
+
+            width: 200px;
+            margin-top: -50px;
+            top: 335px;
         }
 
         &__imgR {
+            display: grid;
             grid-column: 2 / 5;
             grid-row: 1;
-            width: auto;
+            width: 700px;
+            margin: 0 auto;
         }
 
         &__imgRinstal {
             display: block;
 
-            width: 350px;
+            width: 200px;
             grid-row: 2 / 4;
             grid-column: 4 / 5;
             justify-self: center;
@@ -127,11 +139,11 @@ button{
 
         &__main{
             display: block;
-            width: 271px;
             position: relative;
-            right: -542px;
+            right: -370px;
             top: -250px;
             z-index: -1;
+            width: 65px;
         }
 
         &-imgM {
@@ -140,52 +152,107 @@ button{
         }
     }
 
+    .partie__feu{
+        display: block;
+    }
+    
+}
+
+@media (min-width: 1040px) {
+    .projet__imgR {
+        width: 700px;
+        margin: 0 auto;
+    }
+
     .projet__spirale1 {
-        animation: rotation2 40s linear infinite;
+        width: 400px;
+        margin-top: 100px;
     }
 
-    @keyframes rotation2 {
-        from {
-            transform: rotate(0deg);
-        }
-        to {
-            transform: rotate(360deg);
-        }
+    .projet__spirale2{
+        width: 150px;
+        margin-top: -50px;
+        top: 335px;
+    }
+    .projet__main {
+        width: 140px;
+        right: -425px;
+    }
+    .projet__imgRinstal {
+        width: 250px;
+    }
+}
+
+@media (min-width: 1120px) {
+
+    .projet__spirale1 {
+        width: 600px;
     }
 
-    .projet__spirale2 {
-        animation: rotation3 15s linear infinite;
+    .projet__spirale2{
+        width: 350px;
     }
+    .projet__main {
+        width: 200px;
+        right: -450px;
+        top: -250px;
+    }
+    .projet__imgRinstal {
+        width: 350px;
+    }
+}
 
-    @keyframes rotation3 {
-        from {
-            transform: rotate(0deg);
-        }
-        to {
-            transform: rotate(-360deg);
-        }
+@media (min-width: 1230px) {
+    .projet__main {
+        right: -500px;
     }
+}
 
-    .projet-imgM {
-        animation: tremblement 0.1s infinite; /* Applique l'animation de tremblement */
+
+.projet-imgM {
+    animation: tremblement 0.1s infinite; /* Applique l'animation de tremblement */
+}
+
+@keyframes tremblement {
+    0% {
+        transform: translateX(-1px); /* Légère translation vers le haut et la gauche */
     }
-    
-    @keyframes tremblement {
-        0% {
-            transform: translateX(-1px); /* Légère translation vers le haut et la gauche */
-        }
-        25% {
-            transform: translateX(1px); /* Légère translation vers le bas et la droite */
-        }
-        50% {
-            transform: translateX(2px); /* Légère translation vers le haut et la droite */
-        }
-        75% {
-            transform: translateX(2px); /* Légère translation vers le bas et la gauche */
-        }
-        100% {
-            transform: translateX(1px); /* Retour à la position initiale */
-        }
+    25% {
+        transform: translateX(1px); /* Légère translation vers le bas et la droite */
     }
-    
+    50% {
+        transform: translateX(2px); /* Légère translation vers le haut et la droite */
+    }
+    75% {
+        transform: translateX(2px); /* Légère translation vers le bas et la gauche */
+    }
+    100% {
+        transform: translateX(1px); /* Retour à la position initiale */
+    }
+}
+
+.projet__spirale1 {
+    animation: rotation2 40s linear infinite;
+}
+
+@keyframes rotation2 {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.projet__spirale2 {
+    animation: rotation3 15s linear infinite;
+}
+
+@keyframes rotation3 {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(-360deg);
+    }
 }

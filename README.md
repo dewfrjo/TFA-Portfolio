@@ -6,9 +6,9 @@
 
 ## Features
 
-- Copy `src/assets/*/` to `www/assets/*/` folder.
-- Compile SASS `src/styles/app.scss` to `www/styles` folder.
-- Bundle and transpile JS `src/scripts/app.js` to `www/scripts` folder.
+- Copy `src/assets/*/` to `tfa/assets/*/` folder.
+- Compile SASS `src/styles/app.scss` to `tfa/styles` folder.
+- Bundle and transpile JS `src/scripts/app.js` to `tfa/scripts` folder.
 - Create sources maps.
 - Run a dev web server with browsersync.
 

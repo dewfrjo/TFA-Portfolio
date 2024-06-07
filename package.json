@@ -2,9 +2,9 @@
   "name": "@dwmaj/workflow-php",
   "version": "1.0.0",
   "description": "",
-  "main": "www/index.php",
+  "main": "tfa/index.php",
   "scripts": {
-    "clean": "rimraf www/assets",
+    "clean": "rimraf tfa/assets",
     "build": "npm run clean && npx mix --production",
     "start": "npx mix watch",
     "watch": "npx mix watch",

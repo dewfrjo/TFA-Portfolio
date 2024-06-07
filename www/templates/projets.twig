@@ -47,6 +47,7 @@
   <main>
 
     <h1 class="intro">Projets déjà réalisé</h1>
+    <img class="img-suspendu" src="assets/images/perso-suspendu-2.svg" alt="">
     <section id="projet" class="projet">
       <h2>Mes dernières réalisations</h2>
       <img class="projet__spirale1" src="assets/images/fond-spiral.svg" alt="Dessin d'une grande spirale.">
@@ -79,7 +80,8 @@
       <div class="projet__grid">
         <div class="projet-text">
           <h3>{{projet_data.projet3.name}}: {{projet_data.projet3.date}}</h3>
-          <p>{{projet_data.projet3.description}}</p>
+          <p>{{projet_data.projet3.description}}</p> <br>
+          <p>{{projet_data.projet3.point__positif}}</p>
         </div>
         <a class="projet__imgR" href="https://jonathan-dewandre.be/projets/rethinking-ux/"><img class="projet__imgR" src={{projet_data.projet3.projet_img1}} alt="Page home du projet."></a>
         <button class="btnP projet__btn1"><a class="btnP projet__btn" href="https://jonathan-dewandre.be/projets/rethinking-ux/">Voir le projet</a></button>

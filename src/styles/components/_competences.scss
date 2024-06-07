@@ -3,6 +3,10 @@
     margin-bottom: 50px;
 }
 
+.competence-intro__titre {
+    margin: 0 17px;
+}
+
 .competences {
     &-titre {
         background-color: transparent;
@@ -54,6 +58,9 @@
 }
 
 @media (min-width: 820px) {
+    .competence-intro {
+        padding-top: 100px;
+    }
     .intro__competence {
         text-align: center;
     }

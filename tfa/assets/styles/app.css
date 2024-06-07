@@ -316,7 +316,7 @@ body.menu--open .fond-header {
     justify-content: end;
   }
 }
-@media (min-width: 1040px) {
+@media (min-width: 840px) {
   .sticky-menu ul {
     justify-content: center;
   }
@@ -944,6 +944,10 @@ button {
   margin-bottom: 50px;
 }
 
+.competence-intro__titre {
+  margin: 0 17px;
+}
+
 .competences-titre {
   background-color: transparent;
   color: black;
@@ -992,6 +996,10 @@ button {
 }
 
 @media (min-width: 820px) {
+  .competence-intro {
+    padding-top: 100px;
+  }
+
   .intro__competence {
     text-align: center;
   }
@@ -1050,21 +1058,16 @@ button {
     padding-top: 5px;
   }
 }
-.img-suspendu {
-  position: absolute;
-  top: 485px;
-  left: 90px;
-  transform: rotate(6deg);
-}
-
 .partie__feu {
   display: none;
 }
 
 @media (min-width: 820px) {
   .img-suspendu {
-    top: 346px;
+    position: absolute;
+    top: 45%;
     left: 50%;
+    transform: rotate(6deg);
   }
 
   .texttfa {
@@ -1075,10 +1078,18 @@ button {
     grid-row: 3;
     margin: 0 0 250px 0;
   }
+
+  .projet__grid__3 {
+    margin-top: -200px;
+  }
 }
 @media (min-width: 840px) {
   .partie__feu {
     display: block;
+  }
+
+  .projet__grid__3 {
+    margin-top: 0;
   }
 }
 footer {
